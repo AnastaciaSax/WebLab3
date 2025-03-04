@@ -26,14 +26,15 @@ left: 120px;
     align-items: center;
     padding: 20px;
     background-color: #fff;
+    margin-bottom: 40px;
 }
 
 .logo {
-    top: 5px;
-    left: 140px;
+    position: fixed;
+    top: 26px;
+    left: 159px;
     width: 189px;
     height: 40px;
-    position: relative;
 }
 
 .logo img {
@@ -142,6 +143,11 @@ left: 120px;
     width: 100%;
     height: 100%;
 }
+.happy-girl img{
+    left: 475px;
+    top: -57px;
+    position: relative;
+}
 .title-text p{
     color: #3D3D3F;
 font-size: 21px;
@@ -151,30 +157,45 @@ line-height: 34px;
 word-wrap: break-word;
 padding-top: 67px;
 }
-.main-button{
-    padding-top: 73px;
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@font-face {
+    font-family: 'CustomMulish';
+    src: local('Mulish'), url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap') format('woff2');
 }
-.main-button a{
+
+.main-button{
+    display: flex;
+    align-items: center;  /* Вертикальное выравнивание по центру */
+    margin-top: 203px;
+    margin-left: 162px;
+}
+.get-started{
     background-color: #FD695A;
     border-radius: 50px;
-    padding: 17px 32px;
+    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     color: white;
-    font-size: 16px;
-    font-family: 'Mulish', sans-serif;
-    font-weight: 700;
+    font-size: 18px;
+    font-family: 'CustomMulish', sans-serif;
+    font-weight: 500;
     line-height: 28px;
+    letter-spacing: 0.52px;
+}
+.main-button img{
+    position: relative; 
+    top: 25px; /* Устанавливаем отступ сверху для опускания иконки */
+    left:-60px;
+    margin-right: 10px;
 }
 .main-button a:last-of-type{
-    background-color: #FD695A;
-    border-radius: 50px;
-    padding: 17px 32px;
-    text-align: center;
     text-decoration: none;
-    color: white;
-    font-size: 16px;
-    font-family: 'Mulish', sans-serif;
-    font-weight: 700;
+    color: #FD695A;
+    font-size: 18px;
+    font-family: 'CustomMulish', sans-serif;
+    font-weight: 400;
     line-height: 28px;
+    margin-left: -155px;
+    letter-spacing: 0.52px;
 }

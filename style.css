@@ -437,21 +437,16 @@ text-underline-position: from-font;
     box-sizing: border-box; /* Учитываем padding в размере */
     margin-left: 160px;
     margin-right: 185px;
+    margin-bottom: 159px;
 }
 .top-row {
     grid-row: 1; /* Верхняя строка */
-    background-color: #f81616; /* Для примера — светло-серый фон */
     text-align: start; /* Центрируем текст */
-    font-size: 20px;
-    font-weight: bold;
     height: 100%;
 }
 .nav-row {
     grid-row: 2; /* Строка для навигации */
-    background-color: #14c4ff; /* Для примера — более тёмный фон */
     text-align: start;
-    font-size: 18px;
-    font-weight: 600;
     height: 100%;
 }
 .grid-row {
@@ -464,11 +459,224 @@ text-underline-position: from-font;
 }
 
 .grid-item {
-    background-color: #ef6dae; /* Для примера — цвет элементов */
     border-radius: 8px;
-    text-align: center;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
+    display: flex; /* Центрируем содержимое внутри блока (опционально) */
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden;
+}
+.grid-item img {
+    width: 100%; /* Занимает всю ширину родительского блока */
+    height: 100%; /* Занимает всю высоту родительского блока */
+    object-fit: cover; 
+}
+.top-row h1{
+    color: #FD695A;
+    font-family: 'Mulish', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+.top-row h2{
+    color: #3D3D3F;
+    font-family: 'Mulish', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+}
+.nav-row{
+    width: 100%;
+    display: flex; /* Делаем элементы строки навигации flex-элементами */
+    justify-content: flex-start; /* Выравнивание элементов по левому краю */
+    align-items: start; /* Выравнивание элементов по вертикали */
+    gap: 66px; /* Расстояние между элементами */
+    padding-left: 0.2%;
+    padding-top: 0.2%;
+    position: relative;
+    flex-wrap: nowrap;
+}
+.nav-row a {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: #CCC;
+    font-variant-numeric: lining-nums proportional-nums; /* Настройка отображения чисел */
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px; /* Размер шрифта */
+    font-style: normal; /* Нормальный стиль */
+    font-weight: 700; /* Жирный текст */
+    line-height: 22px;
+}
+.nav-row a:first-of-type {
+    margin-right: 0.5%;
+}
+.nav-row a:last-of-type {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: #3D3D3F;
+font-variant-numeric: lining-nums proportional-nums;
+font-family: 'Mulish', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 22px; /* 137.5% */
+padding-left: 9.2%; /* Увеличиваем отступ слева */ 
+}
+.nav-row img{
+    position: absolute; /* Абсолютное позиционирование */
+    right: 0;
+}
+.bottom-rectangle {
+    width: 56px; /* Ширина элемента */
+    height: 3px; /* Высота элемента */
+    background-color: #FD695A; /* Цвет заливки */
+    position: absolute; /* Позиционируем относительно service-grid-item */
+    bottom: 0px;
+    left: 0px;
+}
+/* section 4 */
+
+.section-testimonial {
+    display: flex;
+    flex-direction: column; /* Располагаем содержимое вертикально */
+    box-sizing: border-box; /* Включаем отступы в общий размер */
+    margin-left: 158px;
+    margin-right: 185px;
+    margin-bottom: 2.9%;
 }
 
+.testimonial-top-row {
+    height: 170px;
+    text-align: start;
+    display: flex;
+    justify-content: start;
+    flex-direction: column; /* Две строки вертикально */
+    gap: 15px; /* Отступ между строками */
+}
+.testimonial-top-row h1{
+    color: #FD695A;
+    font-family: 'Mulish', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-top: -13px;
+}
+.testimonial-top-row h2{
+    color: #3D3D3F;
+    font-family: 'Mulish', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.testimonial-block-row {
+    display: grid;
+    grid-template-columns: 515px 135px 545px; /* Две большие колонки по краям и одна узкая в центре */
+    align-items: center; /* Выравнивание по вертикали */
+    padding-top: 23px;
+}
+
+.testimonial-block-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 496px;
+}
+.testimonial-block-people{
+    padding-top: 2%;
+}
+.rounded-block-large {
+    left: 0; /* Начинаем с левого края родителя */
+    width: 100%; /* Занимаем всю ширину родительского блока */
+    height: 304px; /* Указанная фиксированная высота */
+    border-radius: 29px; /* Скругленные края */
+    background: #FFF; /* Заданный белый цвет фона */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.customer{
+    position: absolute; /* Абсолютное позиционирование для размещения сверху */
+    top: 10%; /* Прижимаем к верхней границе блока */
+    left: 9%; /* Прижимаем к левому краю */
+    width: auto; /* Занимаем всю ширину родительского блока */
+    height: 90px;
+    display: flex; /* Flexbox для выравнивания содержимого */
+    align-items: flex-start;
+    gap: 15px;
+}
+.customer-text {
+    display: flex; /* Используем Flexbox для внутреннего выравнивания */
+    flex-direction: column; /* Размещаем тексты в колонку */
+    justify-content: center; /* Выравнивание текстов по верхнему краю */
+    width: 100%; /* Тексты занимают всю доступную ширину */
+    height: 100%;
+}
+.customer-text span {
+    display: column;
+    text-align: left; /* Выравнивание текста по левому краю */
+    margin: 0;
+}
+.customer-text span:first-of-type {
+    color: #3D3D3F;
+    font-variant-numeric: lining-nums proportional-nums; /* Форматирование чисел */
+    font-family: "Mulish", sans-serif; /* Шрифт */
+    font-size: 22px; /* Размер текста */
+    font-style: normal; /* Обычный стиль */
+    font-weight: 700; /* Жирный текст */
+    line-height: 26px;
+    padding-bottom: 6%;
+}
+.customer-text span:last-of-type {
+    color: #3D3D3F; /* Основной цвет текста */
+    font-variant-numeric: lining-nums proportional-nums; /* Форматирование чисел */
+    font-family: "Mulish", sans-serif; /* Шрифт */
+    font-size: 16px; /* Размер текста */
+    font-style: normal; /* Обычный стиль */
+    font-weight: 400; /* Обычный вес текста */
+    line-height: 26px; /* Высота строки */
+    opacity: 0.6;
+}
+.rounded-block-large p{
+    color: #757575;
+    font-variant-numeric: lining-nums proportional-nums; /* Форматирование чисел */
+    font-family: "Mulish", sans-serif; /* Шрифт */
+    font-size: 16px; /* Размер текста */
+    font-style: normal; /* Обычный стиль */
+    font-weight: 600; /* Обычный вес текста */
+    line-height: 25px; /* Высота строки */
+    margin-bottom: -20%;
+}
+.testimonial-block-item.narrow {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+
+/* section 5*/
+
+.section-have-project{
+background-color: blueviolet;
+height: 417px;
+margin-left: 158px;
+    margin-right: 189px;
+    display: flex;
+    flex-direction: column;
+}
+.section-have-project-space{
+    height: 32.5%;
+    background-color:#FD695A;
+}
+.section-have-project-rounded-block {
+    height:67.5%;
+    width: 100%; /* Занимает всю ширину родительского блока */
+    background: linear-gradient(106deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.60) 100%); /* Градиентный фон */
+    box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.03); /* Лёгкая тень */
+    border-radius: 15px; /* Скруглённые края */
+    border: 4px solid white; /* Белая рамка */
+    box-sizing: border-box; 
+}

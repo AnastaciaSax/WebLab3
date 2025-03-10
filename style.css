@@ -1,17 +1,25 @@
 body{
-    background: black;
+    background: linear-gradient(65deg, rgba(255, 255, 255, 0.49) -1.59%, rgba(255, 255, 255, 0.46) 99.42%);
     scroll-behavior: smooth;
+    height: 5250px;
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+nav a, ul li a {
+    transition: transform 0.4s ease;
+}
+
+nav a:hover, ul li a:hover {
+    transform: scale(1.1); /* Увеличивает элемент на 10% */
+}
+
 .thumb {
     max-height: 758px;
     margin-right: auto;
     margin-left: auto;
-    background: linear-gradient(65.25deg, rgba(255, 255, 255, 0.49) -1.59%, rgba(255, 255, 255, 0.46) 99.42%);
     margin-bottom: 132px;
 }
 .content{
@@ -74,13 +82,12 @@ left: 120px;
     line-height: 28px;
     text-align: center;
     text-decoration: none;
-    margin-right: 50px;
+    margin-right: 51px;
     word-wrap: break-word;
 }
 .contact-us{
     padding-left: 166px;
 }
-
 .contact-us a {
     background-color: #FD695A;
     border-radius: 50px;
@@ -92,6 +99,10 @@ left: 120px;
     font-family: 'Mulish', sans-serif;
     font-weight: 510;
     line-height: 28px;
+    transition: background-color 0.4s ease;
+}
+.contact-us a:hover{
+    background-color:#29d053;
 }
 .title {
     width: 607px;
@@ -185,11 +196,18 @@ padding-top: 67px;
     line-height: 28px;
     letter-spacing: 0.52px;
 }
+.main-button a{
+    transition: color 0.4s ease;
+}
+.main-button a:hover{
+    color:#29d053;
+}
 .main-button img{
     position: relative; 
     top: 25px; /* Устанавливаем отступ сверху для опускания иконки */
     left:-60px;
     margin-right: 10px;
+    cursor: pointer;
 }
 .main-button a:last-of-type{
     text-decoration: none;
@@ -310,6 +328,10 @@ padding-top: 67px;
     font-weight: 500;
     line-height: 28px;
     letter-spacing: 0.4px;
+    transition: background-color 0.4s ease;
+}
+.section-service-left a:hover{
+    background-color:#29d053;
 }
 .service-grid-item h1{
     color: #37383D;
@@ -412,6 +434,10 @@ text-underline-position: from-font;
     font-weight: 450;
     line-height: 28px;
     letter-spacing: 0.4px;
+    transition: background-color 0.4s ease;
+}
+.section-about-us-left a:hover{
+    background-color:#29d053;
 }
 .section-about-us-right{
     display: flex;
@@ -656,6 +682,14 @@ padding-left: 9.2%; /* Увеличиваем отступ слева */
     flex-direction: column;
     gap: 29px;
 }
+.testimonial-block-item.narrow img{
+    transition: filter 0.3s ease;
+    cursor: pointer;
+}
+.testimonial-block-item.narrow img:hover{
+
+    filter: sepia(50%) hue-rotate(90deg) brightness(1.2);
+}
 
 /* section 5*/
 
@@ -700,6 +734,10 @@ margin-left: 158px;
     font-weight: 450;
     line-height: 28px;
     letter-spacing: 0.3px;
+    transition: background-color 0.4s ease;
+}
+.section-have-project-rounded-block a:hover{
+    background-color:#29d053;
 }
 .section-have-project-rounded-block h2{
     color: #3D3D3F;
@@ -720,9 +758,176 @@ margin-left: 158px;
 /* footer */
 
 footer{
-    background-color: #FD695A;
-
 height: 355px;
 margin-left: 160px;
     margin-right: 185px;
+    display: flex; /* Flexbox для выравнивания элементов */
+    flex-direction: column; /* Элементы идут сверху вниз */
+    box-sizing: border-box;
 }
+.footer-spacer {
+    width: 100%; /* На всю ширину страницы */
+    height: 1px; /* Тонкая линия */
+    opacity: 0.2;
+background-color: #757575;
+}
+.footer-grid {
+    display: grid; /* Включаем CSS Grid */
+    grid-template-columns: 245px 220px 186px 205px 300px; /* Делим на 5 одинаковых колонок */
+    gap: 5px; /* Отступы между колонками */
+    align-items: center;
+}
+
+.footer-part {
+    height: 313px;
+    text-align: start;
+    color: white; /* Цвет текста */
+    font-family: "Mulish", sans-serif; /* Шрифт */
+    font-size: 16px; /* Размер текста */
+    font-weight: 600; /* Полужирный текст */
+}
+
+.footer-bottom {
+    display: grid; /* Используем CSS Grid для нижней строки */
+    grid-template-columns: 1fr 1fr; /* Делим на 2 части */
+    height: 41px;
+}
+
+.footer-bottom-left{
+    display: flex;
+    justify-content: start;
+    align-items:end;
+    height: 100%;
+}
+.footer-bottom-left span, .footer-bottom-right a{
+    color: #646464;
+font-size: 14px;
+font-family: "Rubik",sans-serif;
+font-weight: 400;
+line-height: 14px;
+text-decoration: none;
+padding-bottom: 0.2%;
+}
+ .footer-bottom-right {
+    display: flex;
+    justify-content: end;
+    align-items:end;
+    height: 100%;
+    gap: 9.3%;
+}
+.footer-logo {
+    display: flex;
+    justify-content: start;
+    align-items:start;
+    height: 40px;
+    gap: 22px;
+    margin-bottom: 23px;
+}
+.footer-logo span {
+    color: #3D3D3F;
+    font-size: 28px;
+    font-family: 'Rubik',sans-serif;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+    word-wrap: break-word;
+    margin-top: -3px;
+}
+.info{
+    display: flex;
+    justify-content: flex-start;
+    align-items:start;
+    height: 32px;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+.info span{
+    color: #37383D;
+font-family: "DM Sans",sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px; /* 200% */
+
+}
+.info img{
+padding-top: 5px;
+}
+.footer-part h2{
+    color: #3D3D3F;
+     font-size: 16px;
+     font-family: "Mulish",sans-serif;
+     font-weight: 700;
+     line-height: 22px;
+     word-wrap: break-word;
+     margin-bottom: 26px;
+     margin-top: -3px;
+}
+.footer-part a{
+    color: #666666;
+font-size: 16px;
+font-family: "Mulish",sans-serif;
+font-weight: 600;
+line-height: 24px;
+word-wrap: break-word;
+text-decoration: none;
+}
+.footer-part.media h2{
+    margin-bottom: 4px;
+}
+.footer-part ul{
+    list-style-type: none;
+}
+.footer-part ul li {
+    margin-bottom: 16px; /* Измените значение по вашему желанию */
+}
+.footer-part.join span{
+    color: #666666;
+font-size: 16px;
+font-family: "Mulish",sans-serif;
+font-weight: 400;
+line-height: 24px;
+}
+.input-field {
+    border-radius: 8px; /* Скругленные углы */
+    border: 1px solid rgba(178, 178, 178, 0.21); /* Полупрозрачная граница */
+    background: var(--Base-Color-White, #FFF); /* Белый фон с использованием переменной */
+    width: 296px; /* Фиксированная ширина */
+    height: 56px; /* Фиксированная высота */
+    flex-shrink: 0; /* Запрещаем сжиматься при использовании Flexbox */
+    box-sizing: border-box; /* Учитываем границы в общей ширине и высоте */
+    padding-left: 15px;
+    margin-top: 8px;
+    margin-bottom: 40px;
+}
+.input-field:not(:placeholder-shown) {
+    border-color: #49c53e; /* Граница меняется, если поле заполнено */
+    background-color: #f3fef4 /* Светлый зеленый фон */
+}
+.input-field::placeholder {
+    color: #999; /* Цвет текста подсказки */
+    font-family: "Mulish", sans-serif; /* Шрифт подсказки */
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+line-height: 150%; /* 24px */
+}
+.footer-part.join a{
+    background-color: #FD695A;
+    border-radius: 8px;
+    padding: 16px 48px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 450;
+    line-height: 21px;
+    letter-spacing: 0.3px;
+    transition: background-color 0.4s ease;
+}
+.footer-part.join a:hover{
+    background-color:#29d053;
+}
+
+

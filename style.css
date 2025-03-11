@@ -1,0 +1,956 @@
+body{
+    background: linear-gradient(65deg, rgba(255, 255, 255, 0.49) -1.59%, rgba(255, 255, 255, 0.46) 99.42%);
+    scroll-behavior: smooth;
+    height: 5250px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav a, ul li a {
+    transition: transform 0.4s ease;
+}
+
+nav a:hover, ul li a:hover {
+    transform: scale(1.1); /* Увеличивает элемент на 10% */
+}
+
+.thumb {
+    max-height: 758px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 132px;
+}
+.content{
+    width: 1251;
+height: 719;
+top: 28px;
+left: 120px;
+}
+.header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 40px;
+}
+
+.logo {
+    position: fixed;
+    top: 26px;
+    left: 159px;
+    width: 189px;
+    height: 40px;
+}
+
+.logo img {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 35px;
+    height: 34px;
+}
+
+.logo-text {
+    width: 146px;
+    position: absolute;
+    left: 43px;
+    top: 0;
+    color: #3D3D3F;
+    font-size: 32px;
+    font-family: 'Rubik',sans-serif;
+    font-weight: 560;
+    line-height: 40px;
+    letter-spacing: 0.8px;
+    word-wrap: break-word;
+}
+.nav {
+    display: flex;
+    position: absolute;
+    top: 37px;
+    left: 529px;
+}
+.nav a{
+    color: #150A29;
+    font-size: 16px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 51px;
+    word-wrap: break-word;
+}
+.contact-us{
+    padding-left: 166px;
+}
+.contact-us a {
+    background-color: #FD695A;
+    border-radius: 50px;
+    padding: 16px 27px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 510;
+    line-height: 28px;
+    transition: background-color 0.4s ease;
+}
+.contact-us a:hover{
+    background-color:#29d053;
+}
+.title {
+    width: 607px;
+    height: 188px;
+    position: relative;
+    left: 163px;
+    top: 126px;
+}
+
+.title-text {
+    width: 607px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-best-marketing,
+.title-digital-agency {
+    font-family: "Mulish", sans-serif;
+    font-weight: 765;
+    font-size: 68px;
+    line-height: 72px;
+    letter-spacing: 3px;
+    word-wrap: break-word;
+}
+
+.title-best-marketing {
+    color: #3D3D3F;
+}
+
+.title-best-marketing .title-marketing {
+    color: #FD695A;
+}
+
+.title-digital-agency {
+    color: #3D3D3F;
+}
+
+.title-decoration {
+    width: 404px;
+    height: 116px;
+    position: absolute;
+    left: 163px;
+    top: -13px; 
+    z-index: 1; /* Располагаем выше текста Marketing */
+}
+
+.title-decoration img {
+    width: 100%;
+    height: 100%;
+}
+.happy-girl img{
+    left: 475px;
+    top: -57px;
+    position: relative;
+}
+.title-text p{
+    color: #3D3D3F;
+font-size: 21px;
+font-family: "Manrope",sans-serif;
+font-weight: 400;
+line-height: 34px;
+word-wrap: break-word;
+padding-top: 67px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@font-face {
+    font-family: 'CustomMulish';
+    src: local('Mulish'), url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap') format('woff2');
+}
+
+.main-button{
+    display: flex;
+    align-items: center;  /* Вертикальное выравнивание по центру */
+    margin-top: 203px;
+    margin-left: 162px;
+}
+.get-started{
+    background-color: #FD695A;
+    border-radius: 50px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'CustomMulish', sans-serif;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.52px;
+}
+.main-button a:first-of-type{
+    transition: background-color 0.4s ease;
+    z-index: 2;
+}
+.main-button a:first-of-type:hover{
+    background-color:#29d053;
+}
+.main-button a:last-of-type{
+    transition: color 0.4s ease;
+    z-index: 2;
+}
+.main-button a:last-of-type:hover{
+    color:#29d053;
+}
+.main-button img{
+    position: relative; 
+    top: 25px; /* Устанавливаем отступ сверху для опускания иконки */
+    left:-60px;
+    margin-right: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+.main-button a:last-of-type{
+    text-decoration: none;
+    color: #FD695A;
+    font-size: 18px;
+    font-family: 'CustomMulish', sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    margin-left: -155px;
+    letter-spacing: 0.52px;
+}
+.agency {
+    margin-right: auto;
+    margin-left: auto;
+    background: linear-gradient(65.25deg, rgba(255, 255, 255, 0.49) -1.59%, rgba(255, 255, 255, 0.46) 99.42%);
+    margin-bottom: 110px;
+}
+.clients{
+    position: relative;
+    display: flex;
+    justify-content: center;  /* Горизонтальное выравнивание по центру */
+    align-items: center;      /* Вертикальное выравнивание по центру */
+    margin-right: 49px;
+    flex-wrap: wrap;  /* Позволяет элементам переноситься на новую строку */
+    margin-bottom: 55px;
+}
+.clients span{
+    width: 214px;
+    color: #3D3D3F;
+    font-size: 18px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+    flex-basis: 100%;  /* Занимает всю ширину для переноса на следующую строку */
+    text-align: center;  /* Выравнивание текста по центру */
+    margin-bottom: 51px;
+}
+.clients img{
+    margin-left: 20px;
+}
+/* Web sections */
+
+.section-service {
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr); /* Левая и правая половины одинаковой ширины */
+    height: 590px; /* Высота блока */
+    margin-bottom: 123px;
+}
+
+.section-service-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+    align-items: flex-start; /* Центрируем содержимое по вертикали */
+    margin-left: 160px;
+    margin-top: 25px;
+}
+.h2-container {
+    display: flex; /* Делаем заголовок и картинку частью flex-контейнера */
+    align-items: center; /* Центрируем картинку и текст вертикально */
+}
+.h2-container img{
+    margin-left: -105px;
+    margin-bottom: -17px;
+}
+.section-service-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Две колонки */
+    grid-template-rows: repeat(2, 1fr); /* Две строки */
+    gap: 32px;
+    margin-right: 190px;
+}
+
+.service-grid-item {
+    background-color: #FFFFFF; /* Белый фон */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+    align-items: center;
+    position: relative;
+}
+
+.section-service-left h1{
+    color: #FD695A;
+    font-family: 'Mulish', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.h2-container h2{
+    color: #3D3D3F;
+    font-family: 'Mulish', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 40px;
+}
+.section-service-left p{
+    color: #515151;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 32px;
+}
+.section-service-left a{
+    background-color: #FD695A;
+    border-radius: 50px;
+    padding: 11px 24px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.4px;
+    transition: background-color 0.4s ease;
+}
+.section-service-left a:hover{
+    background-color:#29d053;
+}
+.service-grid-item h1{
+    color: #37383D;
+font-family: 'Mulish', sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px;
+margin-bottom: 12px;
+}
+.service-grid-item p{
+    color: #747474;
+font-family: "DM Sans", sans-serif;
+font-size: 13.5px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 192.593% */
+letter-spacing: 0.3px;
+margin-bottom: 8px;
+margin-right: 7px;
+}
+.service-grid-item a{
+    color: #3D3D3F;
+font-family: "DM Sans", sans-serif;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: 26px; /* 216.667% */
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-skip-ink: none;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;
+transition: transform 0.4s ease;
+}
+
+.service-grid-item a:hover {
+    transform: scale(1.1); /* Увеличивает элемент на 10% */
+}
+
+.service-grid-item img{
+    margin-bottom: 17px;
+}
+
+.rounded-rectangle {
+    width: 100%; /* Ширина элемента */
+    height: 10px; /* Высота элемента */
+    background-color: #FD695A; /* Цвет заливки */
+    opacity: 0.7; /* Прозрачность элемента */
+    border-radius: 0 0 15px 15px; /* Закругление только нижних углов */
+    filter: drop-shadow(0px 30px 80px rgba(44, 22, 84, 0.07));
+    position: absolute; /* Позиционируем относительно service-grid-item */
+    bottom: 4%;
+}
+/* section 2 */
+.section-about-us{
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr); /* Левая и правая половины одинаковой ширины */
+    height: 570px; /* Высота блока */
+    margin-bottom: 152px;
+}
+
+.section-about-us-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+    align-items: flex-start; /* Центрируем содержимое по вертикали */
+    margin-left: 160px;
+    padding-top: 2%;
+}
+.section-about-us-left h1{
+    color: #FD695A;
+    font-family: 'Mulish', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-bottom: 4%;
+}
+.section-about-us-left h2{
+    color: #3D3D3F;
+    font-family: 'Mulish', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 40px;
+}
+.section-about-us-left p{
+    color: #515151;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 32px;
+}
+.section-about-us-left a{
+    background-color: #FD695A;
+    border-radius: 50px;
+    padding: 11px 41px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 450;
+    line-height: 28px;
+    letter-spacing: 0.4px;
+    transition: background-color 0.4s ease;
+}
+.section-about-us-left a:hover{
+    background-color:#29d053;
+}
+.section-about-us-right{
+    display: flex;
+    justify-content: flex-start; /* Центрируем содержимое по горизонтали */
+    align-items: flex-start; /* Центрируем содержимое по вертикали */
+    margin-left: -30px;
+    margin-right: 118px;
+    position: relative;
+    height: 100%;
+}
+.section-about-us-right img {
+    position: absolute;
+    bottom: 0; /* Прижимаем изображение к нижнему краю */
+    right: 0;
+    object-fit: cover; /* Гарантирует аккуратное отображение */
+}
+/* section 3 */
+
+.section-our-work {
+    display: grid;
+    grid-template-rows: 150px 40px 765px; /*  строки: верхняя, навигация и нижняя */
+    grid-template-columns: 1fr; /* Полная ширина для каждой строки */
+    box-sizing: border-box; /* Учитываем padding в размере */
+    margin-left: 160px;
+    margin-right: 185px;
+    margin-bottom: 159px;
+}
+.top-row {
+    grid-row: 1; /* Верхняя строка */
+    text-align: start; /* Центрируем текст */
+    height: 100%;
+}
+.nav-row {
+    grid-row: 2; /* Строка для навигации */
+    text-align: start;
+    height: 100%;
+}
+.grid-row {
+    grid-row: 3; /* Нижний блок с 6 частями */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 6 равных частей по 3 в строке */
+    grid-template-rows: repeat(2, 1fr); /* 2 строки */
+    gap: 42px; /* Расстояние между элементами */
+    padding-top: 40px;
+}
+
+.grid-item {
+    border-radius: 8px;
+    display: flex; /* Центрируем содержимое внутри блока (опционально) */
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden;
+}
+.grid-item img {
+    width: 100%; /* Занимает всю ширину родительского блока */
+    height: 100%; /* Занимает всю высоту родительского блока */
+    object-fit: cover; 
+}
+.top-row h1{
+    color: #FD695A;
+    font-family: 'Mulish', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+.top-row h2{
+    color: #3D3D3F;
+    font-family: 'Mulish', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+}
+.nav-row{
+    width: 100%;
+    display: flex; /* Делаем элементы строки навигации flex-элементами */
+    justify-content: flex-start; /* Выравнивание элементов по левому краю */
+    align-items: start; /* Выравнивание элементов по вертикали */
+    gap: 66px; /* Расстояние между элементами */
+    padding-left: 0.2%;
+    padding-top: 0.2%;
+    position: relative;
+    flex-wrap: nowrap;
+}
+.nav-row a {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: #CCC;
+    font-variant-numeric: lining-nums proportional-nums; /* Настройка отображения чисел */
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px; /* Размер шрифта */
+    font-style: normal; /* Нормальный стиль */
+    font-weight: 700; /* Жирный текст */
+    line-height: 22px;
+}
+.nav-row a:first-of-type {
+    margin-right: 0.5%;
+}
+.nav-row a:last-of-type {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: #3D3D3F;
+font-variant-numeric: lining-nums proportional-nums;
+font-family: 'Mulish', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 22px; /* 137.5% */
+padding-left: 9.2%; /* Увеличиваем отступ слева */ 
+}
+.nav-row img{
+    position: absolute; /* Абсолютное позиционирование */
+    right: 0;
+}
+.bottom-rectangle {
+    width: 56px; /* Ширина элемента */
+    height: 3px; /* Высота элемента */
+    background-color: #FD695A; /* Цвет заливки */
+    position: absolute; /* Позиционируем относительно service-grid-item */
+    bottom: 0px;
+    left: 0px;
+}
+/* section 4 */
+
+.section-testimonial {
+    display: flex;
+    flex-direction: column; /* Располагаем содержимое вертикально */
+    box-sizing: border-box; /* Включаем отступы в общий размер */
+    margin-left: 158px;
+    margin-right: 185px;
+    margin-bottom: 2.9%;
+}
+
+.testimonial-top-row {
+    height: 170px;
+    text-align: start;
+    display: flex;
+    justify-content: start;
+    flex-direction: column; /* Две строки вертикально */
+    gap: 15px; /* Отступ между строками */
+}
+.testimonial-top-row h1{
+    color: #FD695A;
+    font-family: 'Mulish', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-top: -13px;
+}
+.testimonial-top-row h2{
+    color: #3D3D3F;
+    font-family: 'Mulish', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.testimonial-block-row {
+    display: grid;
+    grid-template-columns: 515px 135px 545px; /* Две большие колонки по краям и одна узкая в центре */
+    align-items: center; /* Выравнивание по вертикали */
+    padding-top: 23px;
+}
+
+.testimonial-block-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 496px;
+}
+.testimonial-block-people{
+    padding-top: 2%;
+}
+.rounded-block-large {
+    left: 0; /* Начинаем с левого края родителя */
+    width: 100%; /* Занимаем всю ширину родительского блока */
+    height: 304px; /* Указанная фиксированная высота */
+    border-radius: 29px; /* Скругленные края */
+    background: #FFF; /* Заданный белый цвет фона */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.customer{
+    position: absolute; /* Абсолютное позиционирование для размещения сверху */
+    top: 10%; /* Прижимаем к верхней границе блока */
+    left: 9%; /* Прижимаем к левому краю */
+    width: auto; /* Занимаем всю ширину родительского блока */
+    height: 90px;
+    display: flex; /* Flexbox для выравнивания содержимого */
+    align-items: flex-start;
+    gap: 15px;
+}
+.customer-text {
+    display: flex; /* Используем Flexbox для внутреннего выравнивания */
+    flex-direction: column; /* Размещаем тексты в колонку */
+    justify-content: center; /* Выравнивание текстов по верхнему краю */
+    width: 100%; /* Тексты занимают всю доступную ширину */
+    height: 100%;
+}
+.customer-text span {
+    display: column;
+    text-align: left; /* Выравнивание текста по левому краю */
+    margin: 0;
+}
+.customer-text span:first-of-type {
+    color: #3D3D3F;
+    font-variant-numeric: lining-nums proportional-nums; /* Форматирование чисел */
+    font-family: "Mulish", sans-serif; /* Шрифт */
+    font-size: 22px; /* Размер текста */
+    font-style: normal; /* Обычный стиль */
+    font-weight: 700; /* Жирный текст */
+    line-height: 26px;
+    padding-bottom: 6%;
+}
+.customer-text span:last-of-type {
+    color: #3D3D3F; /* Основной цвет текста */
+    font-variant-numeric: lining-nums proportional-nums; /* Форматирование чисел */
+    font-family: "Mulish", sans-serif; /* Шрифт */
+    font-size: 16px; /* Размер текста */
+    font-style: normal; /* Обычный стиль */
+    font-weight: 400; /* Обычный вес текста */
+    line-height: 26px; /* Высота строки */
+    opacity: 0.6;
+}
+.rounded-block-large p{
+    color: #757575;
+    font-variant-numeric: lining-nums proportional-nums; /* Форматирование чисел */
+    font-family: "Mulish", sans-serif; /* Шрифт */
+    font-size: 16px; /* Размер текста */
+    font-style: normal; /* Обычный стиль */
+    font-weight: 600; /* Обычный вес текста */
+    line-height: 25px; /* Высота строки */
+    margin-bottom: -20%;
+}
+.testimonial-block-item.narrow {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+.testimonial-block-item.narrow img{
+    transition: filter 0.3s ease;
+    cursor: pointer;
+}
+.testimonial-block-item.narrow img:hover{
+
+    filter: sepia(50%) hue-rotate(90deg) brightness(1.2);
+}
+
+/* section 5*/
+
+.section-have-project{
+background-color: linear-gradient(106deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.60) 100%);
+height: 417px;
+margin-left: 158px;
+    margin-right: 189px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 8.2%;
+}
+.section-have-project-space{
+    height: 32.5%;
+    flex-shrink: 0;
+}
+.section-have-project-rounded-block {
+    height:67.5%;
+    width: 100%; /* Занимает всю ширину родительского блока */
+    background: white;
+    box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.03); /* Лёгкая тень */
+    border-radius: 15px; /* Скруглённые края */
+    border: 4px solid white; /* Белая рамка */
+    box-sizing: border-box;
+    padding-left: 55.2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    box-sizing: border-box;
+}
+.section-have-project-rounded-block a{
+    background-color: #FD695A;
+    border-radius: 50px;
+    padding: 11px 41px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 450;
+    line-height: 28px;
+    letter-spacing: 0.3px;
+    transition: background-color 0.4s ease;
+}
+.section-have-project-rounded-block a:hover{
+    background-color:#29d053;
+}
+.section-have-project-rounded-block h2{
+    color: #3D3D3F;
+    font-family: 'Mulish', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 40px;
+}
+.section-have-project img{
+    position: absolute; /* Абсолютное позиционирование */
+    left: 1%; /* Прижимаем картинку к правому краю */
+    top: 0; /* Прижимаем к верхней границе секции */
+    height: 100%; /* Картинка занимает всю высоту секции */
+    object-fit: cover;
+}
+
+/* footer */
+
+footer{
+height: 355px;
+margin-left: 160px;
+    margin-right: 185px;
+    display: flex; /* Flexbox для выравнивания элементов */
+    flex-direction: column; /* Элементы идут сверху вниз */
+    box-sizing: border-box;
+}
+.footer-spacer {
+    width: 100%; /* На всю ширину страницы */
+    height: 1px; /* Тонкая линия */
+    opacity: 0.2;
+background-color: #757575;
+}
+.footer-grid {
+    display: grid; /* Включаем CSS Grid */
+    grid-template-columns: 245px 220px 186px 205px 300px; /* Делим на 5 одинаковых колонок */
+    gap: 5px; /* Отступы между колонками */
+    align-items: center;
+}
+
+.footer-part {
+    height: 313px;
+    text-align: start;
+    color: white; /* Цвет текста */
+    font-family: "Mulish", sans-serif; /* Шрифт */
+    font-size: 16px; /* Размер текста */
+    font-weight: 600; /* Полужирный текст */
+}
+
+.footer-bottom {
+    display: grid; /* Используем CSS Grid для нижней строки */
+    grid-template-columns: 1fr 1fr; /* Делим на 2 части */
+    height: 41px;
+}
+
+.footer-bottom-left{
+    display: flex;
+    justify-content: start;
+    align-items:end;
+    height: 100%;
+}
+.footer-bottom-left span, .footer-bottom-right a{
+    color: #646464;
+font-size: 14px;
+font-family: "Rubik",sans-serif;
+font-weight: 400;
+line-height: 14px;
+text-decoration: none;
+padding-bottom: 0.2%;
+}
+ .footer-bottom-right {
+    display: flex;
+    justify-content: end;
+    align-items:end;
+    height: 100%;
+    gap: 9.3%;
+}
+.footer-logo {
+    display: flex;
+    justify-content: start;
+    align-items:start;
+    height: 40px;
+    gap: 22px;
+    margin-bottom: 23px;
+}
+.footer-logo span {
+    color: #3D3D3F;
+    font-size: 28px;
+    font-family: 'Rubik',sans-serif;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.5px;
+    word-wrap: break-word;
+    margin-top: -3px;
+}
+.info{
+    display: flex;
+    justify-content: flex-start;
+    align-items:start;
+    height: 32px;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+.info span{
+    color: #37383D;
+font-family: "DM Sans",sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px; /* 200% */
+
+}
+.info img{
+padding-top: 5px;
+}
+.footer-part h2{
+    color: #3D3D3F;
+     font-size: 16px;
+     font-family: "Mulish",sans-serif;
+     font-weight: 700;
+     line-height: 22px;
+     word-wrap: break-word;
+     margin-bottom: 26px;
+     margin-top: -3px;
+}
+.footer-part a{
+    color: #666666;
+font-size: 16px;
+font-family: "Mulish",sans-serif;
+font-weight: 600;
+line-height: 24px;
+word-wrap: break-word;
+text-decoration: none;
+}
+.footer-part.media h2{
+    margin-bottom: 4px;
+}
+.footer-part ul{
+    list-style-type: none;
+}
+.footer-part ul li a {
+    transition: transform 0.4s ease;
+    display: inline-block;
+}
+
+.footer-part ul li a:hover {
+    transform: scale(1.1); /* Увеличивает элемент на 10% */
+}
+.footer-part ul li {
+    margin-bottom: 16px; /* Измените значение по вашему желанию */
+}
+.footer-part.join span{
+    color: #666666;
+font-size: 16px;
+font-family: "Mulish",sans-serif;
+font-weight: 400;
+line-height: 24px;
+}
+.input-field {
+    border-radius: 8px; /* Скругленные углы */
+    border: 1px solid rgba(178, 178, 178, 0.21); /* Полупрозрачная граница */
+    background: var(--Base-Color-White, #FFF); /* Белый фон с использованием переменной */
+    width: 296px; /* Фиксированная ширина */
+    height: 56px; /* Фиксированная высота */
+    flex-shrink: 0; /* Запрещаем сжиматься при использовании Flexbox */
+    box-sizing: border-box; /* Учитываем границы в общей ширине и высоте */
+    padding-left: 15px;
+    margin-top: 8px;
+    margin-bottom: 40px;
+}
+.input-field:not(:placeholder-shown) {
+    border-color: #49c53e; /* Граница меняется, если поле заполнено */
+    background-color: #f3fef4 /* Светлый зеленый фон */
+}
+.input-field::placeholder {
+    color: #999; /* Цвет текста подсказки */
+    font-family: "Mulish", sans-serif; /* Шрифт подсказки */
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+line-height: 150%; /* 24px */
+}
+.footer-part.join a{
+    background-color: #FD695A;
+    border-radius: 8px;
+    padding: 16px 48px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 450;
+    line-height: 21px;
+    letter-spacing: 0.3px;
+    transition: background-color 0.4s ease;
+}
+.footer-part.join a:hover{
+    background-color:#29d053;
+}
+
+

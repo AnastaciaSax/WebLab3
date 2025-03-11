@@ -196,10 +196,18 @@ padding-top: 67px;
     line-height: 28px;
     letter-spacing: 0.52px;
 }
-.main-button a{
-    transition: color 0.4s ease;
+.main-button a:first-of-type{
+    transition: background-color 0.4s ease;
+    z-index: 2;
 }
-.main-button a:hover{
+.main-button a:first-of-type:hover{
+    background-color:#29d053;
+}
+.main-button a:last-of-type{
+    transition: color 0.4s ease;
+    z-index: 2;
+}
+.main-button a:last-of-type:hover{
     color:#29d053;
 }
 .main-button img{
@@ -208,6 +216,7 @@ padding-top: 67px;
     left:-60px;
     margin-right: 10px;
     cursor: pointer;
+    z-index: 1;
 }
 .main-button a:last-of-type{
     text-decoration: none;
@@ -366,7 +375,13 @@ text-decoration-skip-ink: none;
 text-decoration-thickness: auto;
 text-underline-offset: auto;
 text-underline-position: from-font;
+transition: transform 0.4s ease;
 }
+
+.service-grid-item a:hover {
+    transform: scale(1.1); /* Увеличивает элемент на 10% */
+}
+
 .service-grid-item img{
     margin-bottom: 17px;
 }
@@ -877,6 +892,14 @@ text-decoration: none;
 }
 .footer-part ul{
     list-style-type: none;
+}
+.footer-part ul li a {
+    transition: transform 0.4s ease;
+    display: inline-block;
+}
+
+.footer-part ul li a:hover {
+    transform: scale(1.1); /* Увеличивает элемент на 10% */
 }
 .footer-part ul li {
     margin-bottom: 16px; /* Измените значение по вашему желанию */

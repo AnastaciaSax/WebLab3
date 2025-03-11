@@ -1,2 +1,2 @@
 # WebLab3
-[View my CV](https://AnastaciaSax.github.io/WebMockUp/lab2)
+[View my Web]([https://AnastaciaSax.github.io/WebLab3/WebMockUp/lab2.html])

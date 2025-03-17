@@ -228,6 +228,8 @@ padding-top: 67px;
     margin-left: -155px;
     letter-spacing: 0.52px;
 }
+
+/* agency */
 .agency {
     margin-right: auto;
     margin-left: auto;
@@ -842,7 +844,7 @@ padding-bottom: 0.2%;
     color: #3D3D3F;
     font-size: 28px;
     font-family: 'Rubik',sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 40px;
     letter-spacing: 0.5px;
     word-wrap: break-word;
@@ -951,6 +953,204 @@ line-height: 150%; /* 24px */
 }
 .footer-part.join a:hover{
     background-color:#29d053;
+}
+
+/* adapt */
+
+@media (max-width: 768px) {
+    body {
+        height: auto; /* Сохраняем автоматическую высоту */
+        overflow-x: hidden; /* Убираем горизонтальный скролл */
+        width: 768px; /* Используем 100% вместо 100vw */
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* Контролируем размеры элементов */
+        /* Убираем overflow-x: hidden, чтобы не обрезать содержимое */
+    }
+
+    .thumb {
+        max-height: 100%; /* Делаем блок гибким */
+        margin: 0 auto auto auto; /* Убираем лишние отступы */
+        width: 100%; /* Адаптируем ширину для планшетов */
+    }
+
+    .content {
+        width: 100%; /* Растягиваем на всю ширину контейнера */
+        height: auto; /* Убираем фиксированную высоту */
+        top: 0; /* Сбрасываем позиционирование */
+        left: 0;
+        margin: 0 auto; /* Центрируем контент */
+    }
+
+    .header {
+        display: flex; /* Используем Flexbox */
+        justify-content: space-between; /* Логотип слева, кнопка справа */
+        align-items: center;
+        margin-top: 1.5%;
+        padding: 10px 10px; /* Уменьшаем отступы */
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        position: relative; /* Убираем фиксированное позиционирование */
+        top: auto;
+        left: 1%;
+        width: auto; /* Делаем логотип гибким */
+        margin-right: auto; /* Центрируем логотип */
+        display: flex; /* Выравниваем текст и картинку */
+        align-items: center; /* Логотип и текст на одной линии */
+    }
+
+    .logo img {
+        width: 30px; /* Уменьшаем размер логотипа */
+        height: 30px;
+    }
+
+    .logo-text {
+        font-size: 26px; /* Уменьшаем размер текста */
+        line-height: 24px;
+        top: 15%;
+    }
+    .nav{
+        margin-left: 14%; /* Сдвигаем кнопку вправо */
+       margin-top: -1.8%;
+        display: flex; /* Центрируем содержимое кнопки */
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .nav a{
+        display: none; /* Скрываем навигацию на планшете (если она мешает) */
+    }
+
+    .contact-us {
+        margin: 0; /* Сбрасываем лишние отступы */
+        margin-left: auto; /* Сдвигаем кнопку вправо */
+        padding: 0; /* Убираем внутренние отступы */
+    }
+
+    .contact-us a {
+        display: inline-block;
+        font-size: 14px; /* Уменьшаем размер шрифта */
+        padding: 9px 20px; /* Уменьшаем внутренние отступы */
+        margin:0;
+    }
+    .title {
+        width: 90%; /* Уменьшаем ширину и делаем её гибкой */
+        height: auto; /* Автоматическая высота для контента */
+        position: relative; /* Сбрасываем точное позиционирование */
+        left: 0; /* Убираем фиксированный отступ слева */
+        top: 80px; /* Уменьшаем отступ сверху */
+        margin: 0 0; /* Центрируем по горизонтали */
+        margin-bottom: 10%;
+    }
+
+    .title-text {
+        width: 100%; /* Растягиваем текст на ширину контейнера */
+        position: static; /* Убираем абсолютное позиционирование */
+        margin: 0; /* Убираем отступы */
+        padding: 0 15px; /* Добавляем боковые отступы */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Выравниваем текст по левому краю */
+    }
+
+    .title-best-marketing,
+    .title-digital-agency {
+        font-size: 36px; /* Уменьшаем размер текста */
+        line-height: 32px; /* Корректируем межстрочный интервал */
+        letter-spacing: 1px; /* Сокращаем расстояние между буквами */
+        position: relative; 
+    }
+
+    .title-best-marketing .title-marketing {
+        color: #FD695A; /* Сохраняем цвет "Marketing" */
+    }
+
+    .title-text p {
+        font-size: 16px; /* Уменьшаем размер текста параграфа */
+        line-height: 24px; /* Делаем текст более компактным */
+        padding-top: 6%; /* Уменьшаем отступ сверху */
+        color: #3D3D3F; /* Остаётся читаемым */
+    }
+
+    .title-decoration {
+        width: 90%; /* Сокращаем размер декоративного элемента */
+        height: auto; /* Пропорционально сохраняем высоту */
+        left: -15.5%;
+        top: -40%; /* Уменьшаем отступ сверху */
+        margin: 0 0; /* Центрируем декоративный элемент */
+    }
+
+    .title-decoration img {
+        transform: scale(0.339);
+    }
+    .happy-girl img {
+        position: absolute; /* Оставляем относительное позиционирование */
+        left: 50%;
+        top: -27%;
+        width: 80%; /* Уменьшаем масштаб изображения */
+        max-width: 60%; /* Ограничиваем максимальную ширину */
+        height: auto;
+        display: flex;
+        align-items: end;
+    }
+    .main-button {    
+            display: flex; /* Flexbox для горизонтального размещения */
+            height: auto;
+            flex-direction: row; /* Все элементы располагаются в строку */
+            align-items: center; /* Выравнивание по вертикали */
+            justify-content: center;
+            margin: 0 auto ; /* Центрируем блок */
+            padding: 0; /* Внутренний отступ для корректности */
+            width: auto;
+            gap:3%;
+            background-color:#29d053;
+        }
+    
+        .get-started {
+            background-color: #FD695A;
+            border-radius: 50px; /* Закругление углов */
+            padding: 12px 27px; /* Внутренние отступы */
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-size: 16px; /* Размер текста */
+            font-family: 'CustomMulish', sans-serif;
+            font-weight: 500;
+            line-height: 28px;
+            letter-spacing: 0.52px;
+            flex-shrink: 0;
+        }
+    
+        .main-button img {
+            margin: 0; /* Сбрасываем лишние отступы */
+            padding: 0;
+            cursor: pointer;
+            margin-left: -5%;
+        }
+    
+        .main-button a:last-of-type {
+            padding: 0;
+            text-decoration: none;
+            color: #FD695A;
+            font-size: 16px; /* Уменьшенный размер текста */
+            font-family: 'CustomMulish', sans-serif;
+            font-weight: 400;
+            line-height: 28px;
+            margin: 0; /* Убираем отрицательные отступы */
+            letter-spacing: 0.5px;
+            margin-left: -21%;
+        }
+}
+
+@media (max-width: 320px) {
+    body {
+        font-size: 14px;
+    }
 }
 
 

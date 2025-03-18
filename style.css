@@ -1468,51 +1468,37 @@ line-height: 150%; /* 24px */
             }
             .footer-grid {
                 display: grid; /* Используем CSS Grid */
-                grid-template-columns: 1fr 1fr; /* Три колонки для второй строки */
                 grid-template-rows: auto auto; /* Две строки */
                 gap: 1%; /* Расстояние между блоками */
-                justify-content: center; /* Центрируем содержимое */
                 width: 100%; /* Полная ширина */
+                margin-bottom: 1%;
             }
-        
-            .footer-part.logo-down {
-                grid-row: 1 / 2; /* Первая строка */
-                margin: 0;
-                background-color: #29d053;
-                height: 200px;
-                justify-self: end;
-                align-self: center;
-            }
-        
-            .footer-part.join {
-                grid-row: 1 / 2; /* Первая строка */
-                margin: 0;
-                background-color: blue;
-                height: 200px;
-                justify-self: center;
-                align-self: center;
-            }
-        
-            .footer-part.service {
-                grid-column: 1 / 2; /* Левый блок во второй строке */
-                grid-row: 2 / 3; /* Вторая строка */
-                background-color: #29d053;
-                height: auto;
-            }
-        
-            .footer-part.company {
-                grid-column: 2 / 3; /* Средний блок во второй строке */
-                grid-row: 2 / 3; /* Вторая строка */
-                background-color: blue;
-                height: auto;
-            }
-        
-            .footer-part.media {
-                grid-column: 3 / 4; /* Правый блок во второй строке */
-                grid-row: 2 / 3; /* Вторая строка */
-                background-color: #29d053;
-                height: auto;
-            }
+            .footer-part.logo-down, 
+.footer-part.join {
+    grid-row: 1 / 2; 
+    justify-self: start; /* Центрируем блоки по горизонтали */
+    align-self: center; /* Центрируем блоки по вертикали */
+    text-align: left; /* Выравниваем содержимое блоков по левому краю */
+    height: 200px;
+    margin: 0;
+    margin-bottom: 4%;
+}
+.footer-grid > :nth-child(1), /* Левый блок на первой строке */
+.footer-grid > :nth-child(5) { /* Правый блок на первой строке */
+    margin-left: 70%; /* Сдвигаем оба блока вправо */
+}
+
+.footer-part.service,
+.footer-part.company,
+.footer-part.media {
+    grid-row: 2 / 3; /* Располагаем блоки на второй строке */
+    grid-column: auto; /* Автоматическое распределение по столбцам */
+    width: 100%; /* Каждый блок занимает всю возможную ширину */
+    flex-grow: 1;
+    margin: 0 1%;
+    height: 265px;
+padding-left: 50%;
+}
             .footer-part {
                 text-align: left; /* Элементы внутри остаются выровненными по левому краю */
             }
@@ -1556,6 +1542,9 @@ line-height: 150%; /* 24px */
             .footer-bottom-right a {
                 font-size: 12px; /* Уменьшаем текст нижней строки */
                 line-height: 16px;
+            }
+            .footer-bottom{
+                margin-top: -1%;
             }
         
             .footer-part.join span {

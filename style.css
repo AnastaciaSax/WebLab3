@@ -2060,7 +2060,10 @@ footer {
 }
 
 @media (max-width: 320px) {
-    body {
+    body, html {
+        margin: 0;
+    padding: 0;
+    overflow-x: hidden;
         height: auto;
         /* Сохраняем автоматическую высоту */
         overflow-x: hidden;
@@ -2549,7 +2552,6 @@ footer {
         font-size: 12px; /* Компактный шрифт для текста */
         line-height: 18px; /* Уменьшаем межстрочный интервал */
         margin-bottom: 8%; /* Добавляем равномерный отступ */
-        white-space: nowrap;
     }
 
     .section-about-us-left a {
@@ -2566,5 +2568,430 @@ footer {
         width: 80%; /* Увеличиваем размер для мобильных устройств */
         max-width: 100%; /* Ограничиваем ширину */
         height: auto; /* Сохраняем пропорции */
+    }
+    .section-our-work {
+        margin-top: -15%;
+        /* Уменьшаем боковые отступы */
+        margin-bottom: 19%;
+        /* Добавляем нижний отступ */
+        padding-bottom: 8%; /* Компактный отступ снизу */
+        grid-template-rows: auto; /* Высота секции адаптируется автоматически */
+    }
+
+    .top-row {
+        text-align: center;
+        /* Центрируем текст */
+    }
+
+    .top-row h1 {
+        margin-bottom: 3%;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .top-row h2 {
+        font-size: 24px; /* Уменьшаем заголовок */
+        line-height: 28px;
+        margin-bottom: 5%;
+    }
+
+    .nav-row {
+        flex-wrap: wrap;
+        /* Разрешаем перенос элементов */
+        gap: 6px;
+        /* Уменьшаем расстояние между элементами */
+        justify-content: center;
+        /* Центрируем элементы */
+    }
+
+    .grid-row {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 блока в строке */
+        grid-template-rows: repeat(3, 1fr);
+        /* 3 строки */
+        gap: 12px;
+        /* Уменьшаем расстояние между блоками */
+        margin-top: 1%;
+        /* Сокращаем верхний отступ */
+    }
+
+    .grid-item img {
+        border-radius: 8px;
+        /* Остаётся неизменным */
+        width: 100%;
+        /* Занимает всю ширину блока */
+        height: auto;
+        /* Автоматическая высота для пропорций */
+        object-fit: cover;
+        /* Сохраняем аккуратное отображение */
+    }
+
+    .nav-row a {
+        font-size: 12px;
+        /* Уменьшаем размер шрифта */
+        line-height: 15px;
+    }
+
+    .nav-row a:last-of-type {
+        display: none;
+    }
+
+    .nav-row img {
+        display: none;
+    }
+
+    .bottom-rectangle {
+        display: none;
+    }
+
+    .section-testimonial {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10%;
+        /* Корректируем нижний отступ */
+    }
+
+    .testimonial-top-row {
+        text-align: center;
+        /* Центрируем текст */
+        gap: 5px;
+        /* Уменьшаем расстояние между строками */
+    }
+
+    .testimonial-top-row h1 {
+        margin-bottom: 0;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .testimonial-top-row h2 {
+        font-size: 24px; /* Уменьшаем заголовок */
+        line-height: 28px;
+    }
+
+    .testimonial-block-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* Размещение всех блоков по одной колонке */
+        gap: 10px;
+        /* Пространство между строками */
+        margin-top: -30%;
+        /* Корректируем верхний отступ */
+        padding-top: 0;
+    }
+    .customer img {
+        transform: scale(0.85);
+    }
+
+    .testimonial-block-item {
+        height: auto;
+        /* Динамическая высота для адаптации контента */
+    }
+
+    .rounded-block-large {
+        height: auto;
+        /* Адаптивная высота */
+        box-sizing: border-box;
+        padding: 10px;
+        /* Добавляем внутренние отступы */
+        margin-left: 8%;
+        border-radius: 15px;
+        /* Корректируем скругление углов */
+    }
+    .rounded-block-large br {
+        display: none; /* Скрываем <br> на маленьких экранах */
+    }
+    .rounded-block-large p {
+        font-size: 12px; /* Компактный шрифт для текста */
+        line-height: 18px;
+        /* Высота строки */
+        margin-bottom: 0;
+        margin-top: 40%;
+    }
+
+    .customer-text span:first-of-type {
+        font-size: 16px;
+        /* Уменьшаем размер имени */
+    }
+
+    .customer-text span:last-of-type {
+        font-size: 12px;
+        /* Уменьшаем размер описания */
+        margin-top: -2%;
+    }
+
+    .testimonial-block-people {
+        width: 80%;
+        /* Уменьшаем размер изображения */
+        height: auto;
+        /* Сохраняем пропорции */
+    }
+
+    .testimonial-block-item.narrow {
+        display: flex;
+        /* Меняем направление флекс-контейнера на строку */
+        flex-direction: row;
+        /* Располагаем изображения горизонтально */
+        gap: 10px;
+        /* Добавляем промежуток между изображениями */
+        justify-content: center;
+        /* Центрируем изображения внутри блока */
+        align-items: center;
+        /* Выравниваем изображения по вертикали */
+    }
+
+    .testimonial-block-item.narrow img {
+        width: 30px;
+        /* Уменьшаем размер кнопок */
+        height: 30px;
+        transform: rotate(90deg);
+    }
+
+    .testimonial-block-item.large {
+        width: 100%;
+        /* Занимает всю доступную ширину */
+        height: auto;
+        /* Автоматическая высота */
+        overflow: visible;
+        /* Обеспечивает видимость всего содержимого */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .testimonial-block-people {
+        width: 90%;
+        /* Уменьшаем размер изображения */
+        height: auto;
+    }
+    .section-have-project {
+        height: auto;
+        /* Автоматическая высота для адаптации содержимого */
+        margin: 0 auto;
+        /* Убираем боковые отступы */
+        padding: 10px;
+        /* Добавляем внутренние отступы */
+        display: flex;
+        flex-direction: column;
+        /* Элементы располагаются вертикально */
+        align-items: center;
+        /* Центрируем содержимое по горизонтали */
+        margin-bottom: 8%;
+    }
+
+    .section-have-project-space {
+        display: none;
+        /* Убираем пустое пространство для упрощения */
+    }
+
+    .section-have-project-rounded-block {
+        height: auto;
+        /* Автоматическая высота для блока */
+        width: 100%;
+        /* Занимает всю ширину контейнера */
+        padding: 10px;
+        /* Внутренние отступы */
+        display: flex;
+        flex-direction: column;
+        /* Элементы располагаются вертикально */
+        align-items: center;
+        /* Центрируем текст и кнопку */
+        text-align: center;
+        /* Центрируем текст */
+    }
+
+    .section-have-project-rounded-block h2 {
+        font-size: 24px; /* Уменьшаем заголовок */
+        line-height: 28px;
+        margin-bottom: 6%;
+        /* Уменьшаем отступ снизу */
+    }
+
+    .section-have-project-rounded-block a {
+        padding: 6px 20px; /* Уменьшаем внутренние отступы для компактности */
+        font-size: 12px;
+    }
+
+    .section-have-project img {
+        display: none;
+    }
+
+
+    footer {
+        margin: 0 auto;
+        max-width: 320px;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .footer-grid {
+        display: grid;
+        /* Используем CSS Grid */
+        grid-template-rows: auto auto;
+        /* Две строки */
+        gap: 0;
+        /* Расстояние между блоками */
+        max-width: 320px;
+        /* Полная ширина */
+        margin-bottom: 1%;
+        overflow-x: hidden;
+        box-sizing: border-box;
+    }
+    .footer-part.logo-down,
+    .footer-part.join {
+        grid-row: 1 / 2;
+        justify-self: start;
+        /* Центрируем блоки по горизонтали */
+        align-self: center;
+        /* Центрируем блоки по вертикали */
+        text-align: left;
+        /* Выравниваем содержимое блоков по левому краю */
+        height: 160px;
+        margin: 0;
+        margin-bottom: 3%;
+    }
+    .footer-part.join{
+        margin-left: -30%;
+        margin-top: 3%;
+    }
+
+    .footer-grid> :nth-child(1),
+    /* Левый блок на первой строке */
+    .footer-grid> :nth-child(5) {
+
+    }
+
+    .footer-part.service,
+    .footer-part.company,
+    .footer-part.media {
+        grid-row: 2 / 3;
+        /* Располагаем блоки на второй строке */
+        grid-column: auto;
+        /* Автоматическое распределение по столбцам */
+        width: 100%;
+        /* Каждый блок занимает всю возможную ширину */
+        height: 210px;
+        padding: 0; /* Убираем отступы внутри блоков */
+        margin: 0 auto; 
+    }
+    .footer-part.company{
+        margin-left: -50%;
+    }
+    .footer-part.media{
+        margin-left: -110%;
+    }
+
+    .footer-part {
+        text-align: left;
+        /* Элементы внутри остаются выровненными по левому краю */
+    }
+
+    .footer-part.logo-down img {
+        max-width: 25%;
+        /* Устанавливаем максимальную ширину для всех изображений */
+        height: auto;
+        /* Сохраняем пропорции */
+    }
+    .footer-logo{
+        margin-bottom: 3%;
+    }
+    .info{
+        gap: 2%;
+        margin-bottom: -2%;
+    }
+    .info img {
+        width: 10%;
+        /* Устанавливаем ширину для всех изображений */
+        height: auto;
+        margin-top: -3%;
+    }
+
+    .footer-part {
+        font-size: 12px; /* Уменьшаем общий размер текста */
+        line-height: 16px;
+    }
+
+    .footer-part h2 {
+        font-size: 12px; /* Уменьшаем размер заголовков */
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+
+    .footer-part a {
+        font-size: 10px; /* Уменьшаем размер текста ссылок */
+        line-height: 16px;
+    }
+
+    .info span {
+        font-size: 12px; /* Уменьшаем текст информации */
+        line-height: 16px;
+    }
+    .footer-part.logo-down{
+        gap: 1%;
+    }
+
+    .footer-logo span {
+        margin-left: -9%;
+        padding-top: 6%;
+        font-size: 17px;
+        /* Уменьшаем текст логотипа */
+        line-height: 20px;
+    }
+    .footer-logo img{
+        transform: scale(0.85);
+    }
+    .footer-part.join span {
+        font-size: 12px;
+        /* Уменьшаем текст подписки */
+        line-height: 16px;
+    }
+
+    .footer-part.join a {
+        font-size: 10px;
+        /* Уменьшаем текст кнопки подписки */
+        padding: 10px 17px;
+        /* Уменьшаем внутренние отступы кнопки */
+    }
+
+    .input-field {
+        width: 135px;
+        font-size: 12px;
+        /* Уменьшаем текст подсказки в поле */
+        padding-left: 10px;
+        /* Уменьшаем внутренний отступ */
+        height: 40px;
+        /* Уменьшаем высоту поля */
+        margin-bottom: 15%;
+    }
+
+    
+
+
+    .footer-bottom {
+        margin-top: 1%;
+        display: flex; /* Переключаемся на Flexbox */
+        flex-direction: column; /* Элементы располагаются в колонку */
+        align-items: center; /* Центрируем элементы по горизонтали */
+        justify-content: center; /* Центрируем элементы по вертикали */
+        gap: 5px; /* Расстояние между элементами */
+        padding: 15px 0; /* Добавляем отступ сверху и снизу */
+    }
+    .footer-bottom-left span {
+        font-size: 10px; /* Уменьшаем текст */
+        line-height: 14px; /* Межстрочный интервал */
+        text-align: center; /* Центрируем текст */
+    }
+    
+    .footer-bottom-right {
+        display: flex; /* Оставляем Flexbox для ссылок */
+        flex-direction: row; /* Ссылки располагаются в строку */
+        justify-content: center; /* Центрируем содержимое */
+        gap: 6px; /* Расстояние между ссылками */
+    }
+    
+    .footer-bottom-right a {
+        font-size: 10px; /* Уменьшаем текст ссылок */
+        line-height: 14px;
     }
 }
